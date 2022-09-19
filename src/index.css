@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  background-color: grey !important;
+  color: #fff !important;
+}
+.rows {
+  width: 90%;
+  margin: 0 auto !important;
+  max-width: 100%;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.Hits {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: #000 !important;
+}
+.Hits__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.Hits__info {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: rgb(197, 190, 190);
+}
+.bttn,
+.bttn:link,
+.bttn:active,
+.bttn:visited,
+.bttn:hover {
+  text-decoration: none;
+  color: rgb(44, 44, 252);
+
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.btn__remove {
+  color: rgb(253, 6, 6);
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.Search {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+.Form {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.Form__input {
+  background-color: transparent !important;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none !important;
+  border-bottom: 3px solid #000 !important;
+  width: 60%;
+  padding: 1rem;
+}
+.Toggle__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.Toggle__btn {
+  background-color: #fff;
+  color: gray;
+  padding: 0.6rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+}
+.Pages {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0 1rem;
+}
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .rows {
+    grid-template-columns: none;
+  }
+  .Form__input {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 30em) {
+  html {
+    font-size: 56.25%;
+  }
+  .Hits {
+    padding: 1rem 0.8rem;
+  }
+  .Search {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+  .Form__input {
+    background-color: transparent !important;
+    font-size: 2rem;
+  }
+}
