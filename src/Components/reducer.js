@@ -24,7 +24,7 @@ export const reducer = (state, action) => {
       };
     }
     case "CHANGE": {
-      return { ...state, query: action.payload };
+      return { ...state, query: action.payload, page : 0 };
     }
     case "TOGGLE PAGE": {
       if (action.payload === "PREV") {
